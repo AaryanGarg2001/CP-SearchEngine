@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Search Engine</title>
+      <link rel="stylesheet" href="css/styles2.css">
+  </head>
+  <body>
+
+    <h1 class="eng">CP QUESTIONS</h1>
+    <form class="search" action="/" method="post">
+      <input type="text" name="qst" value="" class="box">
+      <button class="btn-primary bt" type="submit" name="button">Submit</button>
+    </form>
+
+<div class="left">
+
+
+  <% for(var i=0;i<qsts.length;i++){ %>
+    <h2 >
+      <%= content[i] %>
+    </h2>
+    <a href="<%= link[i] %>"><%= link[i] %> </a>
+    <p>
+      ID: <%= qsts[i] %>
+    </p>
+    <p>
+      Tags: <%= tag[i] %>
+    </p>
+    <hr>
+  <% } %>
+
+
+</div>
+
+
+
+
+  </body>
+</html>
